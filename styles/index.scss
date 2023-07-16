@@ -25,6 +25,26 @@ body {
     height: 100vh;
     justify-content: center;
     margin: auto;
+
+    button {
+        background-color: var(--font-color);
+        color: var(--newsletter-background);
+        border: none;
+        border-radius: 8px;
+        font-size: var(--font-size-p);
+        font-weight: 700;
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+
+    footer {
+        background-color: var(--newsletter-background);
+        text-align: center;
+        justify-content: center;
+        align-content: flex-end;
+        font-size: 20px;
+        padding: 10px;
+    }
 }
 
 .sign-up-form-container {
@@ -39,13 +59,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 60px 20px 65px;
+    margin: 20px;
+    padding: 20px 40px 20px 45px;
 
     .sign-up-form-heading {
-        // display: flex;
-        // flex-grow: 1;
-        // flex-shrink: 0;
-        // flex-basis: 100px;
         font-size: 55px;
         font-weight: 700;
         margin: 0;
@@ -58,15 +75,22 @@ body {
     .sign-up-form-list {
         padding: 0;
         margin-bottom: 40px;
+        align-items: flex-start;
     }
 
     .sign-up-form-list-icon {
         margin-right: 10px;
+        align-self: start;
     }
 
     .sign-up-form-list-item {
+        display: inline-flex;
         list-style: none;
         margin-bottom: 10px;
+    }
+
+    .sign-up-form-list-item-text {
+        line-height: 1.5;
     }
 
     h6 {
@@ -78,19 +102,15 @@ body {
         height: 50px;
         border-radius: 8px;
         border: solid 1px var(--placeholder-color);
+        font-size: var(--font-size-p);
+    }
+
+    input::placeholder {
+        padding-left: 20px;
     }
 
     input:hover {
         cursor: pointer;
-    }
-
-    .sign-up-form-button {
-        background-color: var(--font-color);
-        color: var(--newsletter-background);
-        border-radius: 8px;
-        font-weight: 700;
-        margin-top: 20px;
-        padding: 20px;
     }
 
     .sign-up-form-button:hover {
@@ -107,23 +127,73 @@ body {
         padding: 20px;
         object-fit: contain;
     }
+
+    #sign-up-form-illustration-mobile {
+        display: none;
+    }
 }
 
 .sign-up-confirmation-container {
     display: none;
 }
 
-footer {
-    background-color: var(--newsletter-background);
-    text-align: center;
-    justify-content: center;
-    align-content: flex-end;
-    font-size: 20px;
-    padding: 10px;
-}
-
-@media screen and (max-width: 375px){
+@media (max-width: 375px){
     body {
-        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        font-size: 15px;
+
+        button {
+            padding: 20px 0;
+        }
+
+        footer {
+            padding: 10px 0;
+        }
+    }
+
+    .sign-up-form-container {
+        margin: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        border-radius: 0;
+
+        .sign-up-form-left-container {
+            margin: 40px 20px 0 20px;
+            padding: 0;
+            flex-direction: column;
+            align-content: flex-end;
+
+            .sign-up-form-heading {
+                font-size: 40px;
+            }
+
+            .sign-up-form-message {
+                margin-right: 30px;
+            }
+
+            .sign-up-form-list-icon {
+                // margin: 10px 10px 10px 0;
+                margin-right: 15px;
+            }
+
+            .sign-up-form-list {
+                margin: 10px 30px 30px 0;
+            }
+        }
+
+        .sign-up-form-right-container {
+            .sign-up-form-illustration {
+                padding: 0;
+            }
+
+            #sign-up-form-illustration-mobile {
+                display: flex;
+            }
+
+            #sign-up-form-illustration-desktop {
+                display: none;
+            }
+        }
     }
 }
