@@ -91,13 +91,8 @@ button {
   border: solid 1px var(--placeholder-color);
   font-size: 1rem;
 }
-.sign-up-form-left-container input::-moz-placeholder {
+.sign-up-form-left-container input#email {
   padding-left: 1.25em;
-  color: var(--placeholder-color);
-}
-.sign-up-form-left-container input::placeholder {
-  padding-left: 1.25em;
-  color: var(--placeholder-color);
 }
 .sign-up-form-left-container .sign-up-form-button:hover {
   background-image: linear-gradient(to right, #FF527B, #FF6A3A);
