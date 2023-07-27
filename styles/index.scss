@@ -27,7 +27,7 @@ body {
 
 h2 {
     font-size: .75rem;
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
 }
 
 button {
@@ -100,6 +100,15 @@ button {
 
     input#email {
         padding-left: 1.25em;
+    }
+
+    #email-error {
+        font-size: .75rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        display: grid;
+        justify-content: end;
+        margin-bottom: 1em;
     }
 
     .sign-up-form-button:hover {

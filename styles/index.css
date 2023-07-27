@@ -26,7 +26,6 @@ body {
 
 h2 {
   font-size: 0.75rem;
-  margin-bottom: 1em;
 }
 
 button {
@@ -93,6 +92,14 @@ button {
 }
 .sign-up-form-left-container input#email {
   padding-left: 1.25em;
+}
+.sign-up-form-left-container #email-error {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  display: grid;
+  justify-content: end;
+  margin-bottom: 1em;
 }
 .sign-up-form-left-container .sign-up-form-button:hover {
   background-image: linear-gradient(to right, #FF527B, #FF6A3A);

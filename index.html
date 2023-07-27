@@ -40,11 +40,11 @@
 
       <div class="sign-up-form-email">
         <h2>Email address</h2>
-        <form>
+        <form name="form">
           <label for="email"></label>
+          <p id="email-error" aria-live="polite"></p>
           <input id="email" type="email" name="email" aria-describedby="email-error" placeholder="email@company.com"><br>
           <button class="sign-up-form-button" id="sign-up-form-button" type="button">Subscribe to monthly newsletter</button>
-          <p id="email-error" aria-live="assertive"></p>
         </form>
       </div>
     </div>
@@ -61,7 +61,7 @@
 
   <!-- Success message start -->
 
-  <div class="sign-up-confirmation-container">
+  <div class="sign-up-confirmation-container" id="sign-up-confirmation-container">
     <img class="sign-up-confirmation-icon" src="assets/images/icon-list.svg" alt=""/>
     <h1 class="sign-up-confirmation-heading">Thanks for subscribing!</h1>
 
