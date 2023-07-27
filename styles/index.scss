@@ -46,6 +46,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: min-content;
+    // display: none;
 }
 
 .sign-up-form-left-container {
@@ -125,6 +126,27 @@ button {
 
 .sign-up-confirmation-container {
     display: none;
+    background-color: var(--newsletter-background);
+    width: 30em;
+    padding: 3em;
+    border-radius: 2.25em;
+
+    .sign-up-confirmation-icon {
+        width: 15%;
+        margin-bottom: 1em;
+    }
+
+    .sign-up-confirmation-heading {
+        font-size: 3.5rem;
+    }
+
+    .sign-up-confirmation-message {
+        margin: 1em 0;
+    }
+
+    .email-address-confirmation {
+        font-weight: bold;
+    }
 }
 
 @media (max-width: 375px){
@@ -142,7 +164,7 @@ button {
         padding: 0;
         display: flex;
         flex-direction: column-reverse;
-        
+        // display: none;
 
         .sign-up-form-left-container {
             border-radius: 0;
@@ -174,6 +196,32 @@ button {
             #sign-up-form-illustration-desktop {
                 display: none;
             }
+        }
+    }
+
+    .sign-up-confirmation-container {
+        // position: relative;
+        display: none;
+        // display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        padding: 1.5em;
+
+        .sign-up-confirmation-icon {
+            width: 20%;
+            margin-top: 5em;
+            margin-bottom: 2em;
+        }
+
+        .sign-up-confirmation-heading {
+            font-size: 2.75rem;
+        }
+
+        .sign-up-confirmation-message-container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
 }

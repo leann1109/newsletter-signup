@@ -114,6 +114,23 @@ button {
 
 .sign-up-confirmation-container {
   display: none;
+  background-color: var(--newsletter-background);
+  width: 30em;
+  padding: 3em;
+  border-radius: 2.25em;
+}
+.sign-up-confirmation-container .sign-up-confirmation-icon {
+  width: 15%;
+  margin-bottom: 1em;
+}
+.sign-up-confirmation-container .sign-up-confirmation-heading {
+  font-size: 3.5rem;
+}
+.sign-up-confirmation-container .sign-up-confirmation-message {
+  margin: 1em 0;
+}
+.sign-up-confirmation-container .email-address-confirmation {
+  font-weight: bold;
 }
 
 @media (max-width: 375px) {
@@ -152,5 +169,25 @@ button {
   }
   .sign-up-form-container .sign-up-form-right-container #sign-up-form-illustration-desktop {
     display: none;
+  }
+  .sign-up-confirmation-container {
+    display: none;
+    flex-direction: column;
+    border-radius: 0;
+    padding: 1.5em;
+  }
+  .sign-up-confirmation-container .sign-up-confirmation-icon {
+    width: 20%;
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+  .sign-up-confirmation-container .sign-up-confirmation-heading {
+    font-size: 2.75rem;
+  }
+  .sign-up-confirmation-container .sign-up-confirmation-message-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=index.css.map */
